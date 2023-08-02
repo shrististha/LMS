@@ -1,0 +1,93 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.book-details {
+    margin-bottom: 20px;
+}
+
+.book-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.book-author {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.book-release {
+    font-size: 1rem;
+    color: #999;
+    margin: 5px 0;
+}
+
+.book-description {
+    font-size: 1rem;
+    color: #444;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.loan-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loan-button:hover {
+    background-color: #45a049;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+
+.loan-button[disabled] {
+    background-color: #ccc; 
+    cursor: not-allowed;
+}
