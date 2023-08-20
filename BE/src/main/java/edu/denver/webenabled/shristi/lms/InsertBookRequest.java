@@ -6,4 +6,9 @@ import lombok.Data;
 public class InsertBookRequest {
     private String title;
     private Integer genreId;
+    private String author;
+    private String isbn;
+    private int yearPublished;
+    private int available;
+    private int total;
 }

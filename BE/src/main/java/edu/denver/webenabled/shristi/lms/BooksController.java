@@ -21,7 +21,11 @@ public class BooksController {
         // Create a new book object from the request
         Book newBook = new Book();
         newBook.setTitle(bookRequest.getTitle());
-
+        newBook.setAvailable(bookRequest.getAvailable());
+        newBook.setTotal(bookRequest.getTotal());
+        newBook.setIsbn(bookRequest.getIsbn());
+        newBook.setAuthor(bookRequest.getAuthor());
+        newBook.setYearPublished(bookRequest.getYearPublished());
         // Find the genre by ID in the request and set it to the book
         Genre genre = genreRepository.findById(bookRequest.getGenreId())
                 .orElseThrow(() -> new EntityNotFoundException("Genre not found with ID: " + bookRequest.getGenreId()));

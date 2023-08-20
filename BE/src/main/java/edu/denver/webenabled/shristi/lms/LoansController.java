@@ -46,7 +46,7 @@ public class LoansController {
     }
 
     @PostMapping("/{id}")
-    public Loan returnBook(@PathVariable Long loanId) {
+    public Loan returnBook(@PathVariable("id") Long loanId) {
         // Find the loan by ID
         Loan loan = loanRepository.findById(loanId)
                 .orElseThrow(() -> new EntityNotFoundException("Loan not found with ID: " + loanId));
