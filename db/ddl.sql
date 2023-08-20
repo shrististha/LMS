@@ -34,3 +34,10 @@ CREATE TABLE IF NOT EXISTS loans (
   date_returned DATE
 );
 
+create sequence loan_id_seq;
+alter table loans alter loan_id set default nextval('loan_id_seq');
+select setval('loan_id_seq', 5);
+
+create sequence book_id_seq;
+alter table books alter book_id set default nextval('book_id_seq');
+select setval('book_id_seq', 5);
